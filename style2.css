@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+}
+
+svg {
+  margin-top: 7%;
+  height: 500px;
+}
+
+#arm-right{
+  animation: armright 1s ease-in-out infinite alternate ;
+  transform-origin: center;
+}
+
+ #right-girl{
+  animation: rightgirl 1s ease-in-out infinite alternate ;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+/* #midgirl{
+    animation: rightgirl 1s ease-in-out infinite alternate ;
+      transform-origin: center;
+} */
+
+#middle-girl{
+  animation: middlegirl 1s ease-in-out infinite alternate;
+}
+
+#arm-left{
+  animation: leftside1 1s ease-in-out infinite alternate;
+}
+
+#leg-left2{
+  animation: leftside 1s ease infinite alternate;
+}
+
+#leg-left1{
+  animation: leftside3 1s ease infinite alternate;
+}
+
+#ground{
+  animation: ground 1.5s linear infinite alternate ;
+}
+
+@keyframes armright {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(20deg);
+  }
+}
+
+@keyframes rightgirl {
+  from{
+    transform: rotateX(0deg);
+  }
+  to{
+    transform: rotateX(20deg);
+  }
+}
+
+@keyframes midgirl {
+  from{
+    transform: rotateY(0%);
+  }
+  to{
+    transform: rotateY(5%);
+  }
+}
+
+@keyframes middlegirl {
+  from{
+    transform: rotateX(0deg);
+  }
+  to{
+    transform: rotateX(8deg);
+  }
+}
+
+@keyframes leftside1 {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(20deg);
+  }
+}
+
+ @keyframes leftside {
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(1deg);
+  }
+}
+
+@keyframes leftside3 {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(20deg);
+  }
+}
+
+@keyframes ground {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(30deg);
+  }
+}
